@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta http-equiv="Cache-Control" content="no-store" />
+  <title>Zihin Atölyesi Psikolog | Danışan • Psikolog • Admin</title>
+  <script>window.APP_VERSION="1.4.0";</script>
+  <link rel="stylesheet" id="panelCss" href="psy-panel.css?v=1.4.0" />  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="panel-page">
+  <div id="app"></div>
+  <!-- Modals -->
+  <div id="modalBackdrop" class="modal-backdrop hidden"></div>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-head">
+      <div id="modalTitle" class="modal-title">Modal</div>
+      <button id="modalClose" class="icon-btn" aria-label="Kapat">✕</button>
+    </div>
+    <div id="modalBody" class="modal-body"></div>
+    <div id="modalFoot" class="modal-foot"></div>
+  </div>
+
+  <!-- Toasts -->
+  <div id="toasts" class="toasts" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- WhatsApp Widget -->
+  <div id="contactWidget" class="contact-widget">
+    <button id="contactToggle" class="contact-toggle wa-fab"><i class="fa-brands fa-whatsapp"></i> Bize Ulaşın</button>
+    <div id="contactPanel" class="contact-panel wa-panel hidden">
+      <div class="contact-head">
+        <div>
+          <p class="muted">WhatsApp Destek</p>
+          <h4>Psikolog / Genel</h4>
+        </div>
+        <button class="icon-btn" id="contactClose">✕</button>
+      </div>
+      <p class="muted">Şablon seç, anında mesaj gönder. Danışan rolü mesajda görünür.</p>
+      <div class="contact-actions">
+        <button class="btn secondary" data-whatsapp="genel">Genel destek</button>
+        <button class="btn secondary" data-whatsapp="psychologist">Psikoloğa ulaş</button>
+      </div>
+      <div class="template-box">
+        <p class="muted">Mesaj şablonları</p>
+        <button class="template" data-template="client">Merhaba, danışanım. Konu: … Hedef: …</button>
+        <button class="template" data-template="parent">Merhaba, yakınım için bilgi almak istiyorum.</button>
+      </div>
+      <div class="footer-note" id="widgetMeta"></div>
+    </div>
+  </div>
+
+
+  <!-- Supabase v2 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.1"></script>
+
+  <script src="psy-app.js?v=1.4.0" id="appScript"></script>
+</body>
+</html>

@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Cache-Control" content="no-store" />
+  <title>Zihin Atölyesi | Psikolog Destek Programı</title>
+  <script>window.APP_VERSION="1.4.0";</script>
+  <link rel="stylesheet" id="styleLink" href="psy-style.css?v=1.4.0" />  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar glass">
+    <div class="container nav-flex">
+      <div class="brand">
+        <i class="fa-solid fa-brain" style="color:var(--accent);"></i>
+        Zihin<span class="light">Atölyesi</span>
+      </div>
+      <input type="checkbox" id="navToggle" class="nav-toggle" aria-label="Navigasyonu aç/kapat" />
+      <label for="navToggle" class="nav-burger" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </label>
+      <div class="nav-rail">
+        <div class="nav-links">
+          <a href="#nasil">Yaklaşımımız</a>
+          <a href="#dersler">Hizmetlerimiz</a>
+          <a href="#ekip">Ekibimiz</a>
+          <a href="#basari">Hikayeler</a>
+          <a href="#sss">Merak Edilenler</a>
+        </div>
+
+        <div class="nav-actions">
+          <button id="btnLogin" class="btn-login">
+            <i class="fa-solid fa-rocket"></i> Panele Giriş
+          
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <header class="hero-section">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="badge-hero">🌿 Dinleyen, anlayan, güçlendiren bir ekip</span>
+        <h1>Terapi Odası Değil,<br><span class="text-gradient">Güvenli Bir Alan</span></h1>
+        <p>Zihin Atölyesi’nde psikolog desteği kişiye özel ilerler. İhtiyaçlarını birlikte netleştirir, hedeflerine uygun bir terapi planı oluştururuz.</p>
+        <div class="hero-btns">
+          <button class="btn-primary" onclick="document.getElementById('market').scrollIntoView({behavior:'smooth'})">Psikologları İncele</button>
+          <button class="btn-outline" onclick="document.getElementById('nasil').scrollIntoView({behavior:'smooth'})">Nasıl Çalışır?</button>
+        </div>
+        <div class="trust-row">
+          <div class="trust-chip"><i class="fa-solid fa-user-check"></i> Birebir Takip</div>
+          <div class="trust-chip"><i class="fa-solid fa-bolt"></i> Hızlı Uyum Planı</div>
+          <div class="trust-chip"><i class="fa-solid fa-mobile-screen"></i> Kolay İletişim</div>
+        </div>
+      </div>
+      
+      <div class="hero-panel">
+        <div class="panel-head">
+          <div>
+            <p class="muted">Bugünün Notu</p>
+            <h3>Psikoloğundan Mesaj Var</h3>
+          </div>
+          <span class="badge">Kişiye Özel</span>
+        </div>
+        <ul class="task-list">
+          <li>
+            <div>
+              <p class="task-title">Duygu Günlüğü</p>
+              <small>Gün içindeki tetikleyicileri birlikte not ediyoruz.</small>
+            </div>
+            <span class="status on">Başla</span>
+          </li>
+          <li>
+            <div>
+              <p class="task-title">Seans Özeti</p>
+              <small>Öne çıkan başlıkları tekrar gözden geçir.</small>
+            </div>
+            <span class="status wait">Planlandı</span>
+          </li>
+          <li>
+            <div>
+              <p class="task-title">Takip Görüşmesi</p>
+              <small>Çarşamba 20:00 • Online</small>
+            </div>
+            <span class="status on">Takvimde</span>
+          </li>
+        </ul>
+        <div class="mini-summary">
+          <div>
+            <p class="muted">İyi Oluş Serin</p>
+            <h4>5 gün</h4>
+          </div>
+          <div>
+            <p class="muted">Haftalık Hedef</p>
+            <h4>%82</h4>
+          </div>
+          <div>
+            <p class="muted">Psikolog Takibi</p>
+            <h4>Aktif</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="istatistik" class="stats-band">
+    <div class="container stats-grid">
+      <div class="stat-box">
+        <div class="num">%100</div>
+        <p>Gizlilik & Güven</p>
+      </div>
+      <div class="stat-box">
+        <div class="num">Seçkin</div>
+        <p>Uzman Psikologlar</p>
+      </div>
+      <div class="stat-box">
+        <div class="num">Kişiye Özel</div>
+        <p>Terapi Planı</p>
+      </div>
+      <div class="stat-box">
+        <div class="num">Sen</div>
+        <p>Önceliğimiz Sensin</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nasil" class="section bg-dark">
+    <div class="container">
+      <div class="section-title">
+        <h2>Bizim Yaklaşımımız</h2>
+        <p>Karmaşık süreçler yerine güvenli bir başlangıç planı kurarız. İhtiyaçlarını netleştirir, birlikte yol alırız.</p>
+      </div>
+      <div class="timeline">
+        <div class="step">
+          <div class="step-icon">1</div>
+          <div>
+            <h3>Tanışma & İhtiyaç Analizi</h3>
+            <p>Önce seni dinliyoruz. Zorlandığın alanları, beklentilerini ve hedeflerini birlikte netleştiriyoruz.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-icon">2</div>
+          <div>
+            <h3>Sana Uygun Psikolog</h3>
+            <p>İhtiyaçlarına en uygun uzmanla eşleşmeni sağlıyoruz. Yanında olan, seni anlayan bir profesyonel.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-icon">3</div>
+          <div>
+            <h3>Hedef Odaklı Seanslar</h3>
+            <p>Yalnızca ihtiyacın olan konulara odaklanırız. Her seans net bir amacı destekler.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-icon">4</div>
+          <div>
+            <h3>Dijital Takip Paneli</h3>
+            <p>Seans notlarını, hedeflerini ve gelişimini panel üzerinden düzenli takip edersin.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-icon">5</div>
+          <div>
+            <h3>Güçlü Bir İyi Oluş</h3>
+            <p>İlerlemeyi birlikte görür, sürdürülebilir bir denge kurarız.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="dersler" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Hizmet Alanlarımız</h2>
+        <p>Yaşamın farklı dönemlerine uygun terapi seçenekleri.</p>
+      </div>
+      <div class="course-grid">
+        <div class="course-card">
+          <h3>Bireysel Terapi</h3>
+          <p>Kaygı, stres, öz güven ve yaşam dengesi üzerine kişiye özel seanslar.</p>
+          <div class="pill-row">
+            <span class="pill">Kaygı</span>
+            <span class="pill">Duygu Düzenleme</span>
+            <span class="pill">Öz Şefkat</span>
+          </div>
+        </div>
+        <div class="course-card highlight">
+          <h3>Çift & Aile Desteği</h3>
+          <p>İletişim, güven ve birlikte yaşama becerileri için yapılandırılmış seanslar.</p>
+          <div class="pill-row">
+            <span class="pill">İletişim</span>
+            <span class="pill">Empati</span>
+            <span class="pill">Süreç Yönetimi</span>
+          </div>
+        </div>
+        <div class="course-card">
+          <h3>Çocuk & Ergen</h3>
+          <p>Okul uyumu, sınav kaygısı ve akran ilişkileri için destekleyici terapi.</p>
+          <div class="pill-row">
+            <span class="pill">Sınav Kaygısı</span>
+            <span class="pill">Özgüven</span>
+            <span class="pill">Odak</span>
+          </div>
+        </div>
+        <div class="course-card">
+          <h3>Kariyer & Yaşam</h3>
+          <p>Karar alma, tükenmişlik ve kariyer geçişlerinde profesyonel destek.</p>
+          <div class="pill-row">
+            <span class="pill">Tükenmişlik</span>
+            <span class="pill">Amaç</span>
+            <span class="pill">Denge</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ekip" class="section bg-dark">
+    <div class="container">
+      <div class="section-title">
+        <h2>Uzman Ekibimiz</h2>
+        <p>Her biri kendi alanında uzman, güvenli bir yol arkadaşı.</p>
+      </div>
+
+      <div class="slider" id="psychologistSlider">
+        <div class="slide-card">
+          <div class="slide-head">
+            <img src="./images/samed.png" alt="Psikolog Derya A." class="teacher-photo" />
+            <div>
+              <h4>Psikolog Derya A.</h4>
+              <p>Kaygı & Stres</p>
+            </div>
+          </div>
+          <p>Kaygı yönetimi ve duygu düzenleme konularında güçlü bir yol haritası oluşturur.</p>
+          <div class="badge-row">
+            <span class="badge">⭐ 4.9</span>
+            <span class="badge">Bilişsel Terapi</span>
+          </div>
+        </div>
+        <div class="slide-card">
+          <div class="slide-head">
+            <img src="https://i.pravatar.cc/150?img=24" alt="Psikolog" />
+            <div>
+              <h4>Uzman Mert K.</h4>
+              <p>Çift & Aile</p>
+            </div>
+          </div>
+          <p>İletişim çatışmalarını çözmede pratik, uygulanabilir araçlar sunar.</p>
+          <div class="badge-row">
+            <span class="badge">⭐ 4.8</span>
+            <span class="badge">Sistemik Yaklaşım</span>
+          </div>
+        </div>
+        <div class="slide-card">
+          <div class="slide-head">
+            <img src="https://i.pravatar.cc/150?img=36" alt="Psikolog" />
+            <div>
+              <h4>Psikolog Eylül S.</h4>
+              <p>Çocuk & Ergen</p>
+            </div>
+          </div>
+          <p>Çocuklar ve ergenlerle güvenli iletişim kuran, oyun temelli yaklaşım.</p>
+          <div class="badge-row">
+            <span class="badge">⭐ 5.0</span>
+            <span class="badge">Oyun Terapisi</span>
+          </div>
+        </div>
+        <div class="slide-card">
+          <div class="slide-head">
+            <img src="https://i.pravatar.cc/150?img=53" alt="Psikolog" />
+            <div>
+              <h4>Uzman Caner T.</h4>
+              <p>Kariyer & Yaşam</p>
+            </div>
+          </div>
+          <p>Kariyer geçişi, tükenmişlik ve motivasyon süreçlerinde destekleyici planlar kurar.</p>
+          <div class="badge-row">
+            <span class="badge">⭐ 4.95</span>
+            <span class="badge">Motivasyon</span>
+          </div>
+        </div>
+      </div>
+      <div class="slider-dots" id="sliderDots"></div>
+    </div>
+  </section>
+
+  <section id="basari" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>İyi Oluş Hikayeleri</h2>
+        <p>Güçlenme yolculukları, gerçek deneyimler.</p>
+      </div>
+      <div class="success-grid">
+        <div class="success-card">
+          <h4>Berfin Y.</h4>
+          <p>Kaygı seviyesini yönetilebilir düzeye indirdi, sınavlara daha dengeli hazırlandı.</p>
+          <span class="tag">Kaygı</span>
+        </div>
+        <div class="success-card">
+          <h4>Mert K.</h4>
+          <p>İletişim becerileri güçlendi, ilişkilerinde daha sağlıklı sınırlar kurdu.</p>
+          <span class="tag">İlişkiler</span>
+        </div>
+        <div class="success-card">
+          <h4>Asya T.</h4>
+          <p>Özgüven çalışmaları sayesinde iş görüşmelerinde daha rahat hissetti.</p>
+          <span class="tag">Özgüven</span>
+        </div>
+        <div class="success-card">
+          <h4>Emir S.</h4>
+          <p>Tükenmişlik belirtilerini yönetti, yaşam dengesini yeniden kurdu.</p>
+          <span class="tag">Tükenmişlik</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ilham" class="section bg-dark">
+    <div class="container">
+      <div class="section-title">
+        <h2>İlham Köşesi</h2>
+        <p>İyi oluş yolculuğunda hatırlamak isteyeceklerin.</p>
+      </div>
+      <div class="quote-carousel" id="quoteCarousel">
+        <div class="quote-text" id="quoteText"></div>
+        <div class="quote-author" id="quoteAuthor"></div>
+        <div class="quote-dots" id="quoteDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="yorumlar" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Danışan Yorumları</h2>
+        <p>Gerçek deneyimler, gerçek geri bildirimler.</p>
+      </div>
+      <div class="success-grid">
+        <div class="success-card">
+          <h4>“Kendimi ilk kez bu kadar net hissediyorum.”</h4>
+          <p>Psikoloğumla çalışmaya başlayınca hedeflerim ve duygularım netleşti.</p>
+          <span class="tag">Bireysel</span>
+        </div>
+        <div class="success-card">
+          <h4>“İletişimimiz güçlendi.”</h4>
+          <p>Çift seansları sayesinde güvenli konuşmayı öğrendik.</p>
+          <span class="tag">Çift</span>
+        </div>
+        <div class="success-card">
+          <h4>“Kaygımı yönetebiliyorum.”</h4>
+          <p>Günlük alıştırmalarla panik anlarında kontrolü ele almayı öğrendim.</p>
+          <span class="tag">Kaygı</span>
+        </div>
+        <div class="success-card">
+          <h4>“Süreç boyunca yanımdaydılar.”</h4>
+          <p>Panel ve mesaj desteği sayesinde kendimi güvende hissettim.</p>
+          <span class="tag">Destek</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sss" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Aklına Takılanlar</h2>
+        <p>Sormaya çekindiklerin burada.</p>
+      </div>
+      <div class="accordion" id="faq">
+        <div class="acc-item">
+          <button class="acc-head">Seanslar nerede yapılıyor?</button>
+          <div class="acc-body">Online (Zoom/Meet) ya da yüz yüze seçenekleriyle, sana en uygun formatta ilerleriz.</div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-head">Panel sistemi nedir?</button>
+          <div class="acc-body">Seans notları, hedefler ve ilerleme adımları için sana özel dijital panel sunuyoruz.</div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-head">Ön görüşme var mı?</button>
+          <div class="acc-body">Evet, ilk görüşme ile ihtiyaçlarını netleştirir ve doğru uzmanı belirleriz.</div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-head">Memnun kalmazsam ne olur?</button>
+          <div class="acc-body">Gerektiğinde psikolog değişikliği veya süreç güncellemesi yapabiliriz. Esneğiz.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gven" class="section bg-dark">
+    <div class="container">
+      <div class="section-title">
+        <h2>Bizim Sözümüz</h2>
+        <p>Psikolojik destek bir yolculuk; güven ve şeffaflıkla yürünür.</p>
+      </div>
+      <div class="trust-grid">
+        <div class="trust-card">
+          <i class="fa-solid fa-shield-halved"></i>
+          <h4>Gizlilik & Güven</h4>
+          <p>Verilerin sadece senin onayınla paylaşılır. Gizlilik temel ilkemizdir.</p>
+        </div>
+        <div class="trust-card">
+          <i class="fa-solid fa-heart"></i>
+          <h4>Samimiyet</h4>
+          <p>İhtiyaçlarını açıkça konuşur, gerçekçi bir plan oluştururuz.</p>
+        </div>
+        <div class="trust-card">
+          <i class="fa-solid fa-clock"></i>
+          <h4>Her Zaman Ulaşılabilir</h4>
+          <p>Seanslar dışında da yönlendirme ve bilgilendirme sunarız.</p>
+        </div>
+        <div class="trust-card">
+          <i class="fa-solid fa-handshake"></i>
+          <h4>Şeffaf İletişim</h4>
+          <p>Hedefler, süreç ve beklentiler net; her adım açık.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="market" class="section mini-section">
+    <div class="container">
+      <div class="mini-grid">
+        <div>
+          <p class="muted">Günün Hatırlatması</p>
+          <h3>“Küçük bir adım bile iyi oluş yolculuğunda büyük bir değişim yaratır.”</h3>
+        </div>
+        <div class="action-box">
+          <h4>Bize Ulaş</h4>
+          <p>Hangi konuda desteğe ihtiyacın var? WhatsApp'tan yaz, hemen plan yapalım.</p>
+          <button class="btn-primary" onclick="document.getElementById('btnLogin').click()">Panele Git</button>
+          <p class="muted" style="margin-top:10px;"> </p>
+        </div>
+        <div>
+          <p class="muted">Hızlı Menü</p>
+          <ul class="quick-links">
+            <li><a href="#basari">Başarı Hikayeleri</a></li>
+            <li><a href="#dersler">Hizmetler</a></li>
+            <li><a href="#ekip">Psikolog Kadrosu</a></li>
+            <li><a href="#sss">Sık Sorulanlar</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<footer id="iletisim">
+  <div class="container footer-content">
+
+    <div class="footer-brand">
+      <h3>Zihin Atölyesi</h3>
+      <p>Psikolog Destek Programı</p>
+      <p>Birlikte güçlenelim.</p>
+    </div>
+
+    <div class="footer-contact">
+      <p class="muted">İletişim</p>
+      <p>✉️ bilgi@zihinatolyesi.com</p>
+      <p>📞 +90 542 672 67 50</p>
+    </div>
+
+    <div class="footer-version version-chip">Sürüm v1.4.0</div>
+
+    <!-- İstersen Konum + Takip Et altta ayrı satır kalsın -->
+    <div class="footer-cols">
+      <div>
+        <p class="muted">Konum</p>
+        <p>📍 İzmir / Türkiye</p>
+      </div>
+      <div>
+        <p class="muted">Takip Et</p>
+        <p>Instagram / YouTube</p>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+  <div id="contactWidget" class="contact-widget">
+    <button id="contactToggle" class="contact-toggle wa-fab"><i class="fa-brands fa-whatsapp"></i> Bize Ulaşın</button>
+    <div id="contactPanel" class="contact-panel wa-panel hidden">   
+      <div class="contact-head">
+        <div>
+          <p class="muted">WhatsApp Hattı</p>
+          <h4>Nasıl yardımcı olabiliriz?</h4>
+        </div>
+        <button class="icon-btn" id="contactClose">✕</button>
+      </div>
+      <p class="muted">Aşağıdaki hazır mesajlardan birini seçip gönder, hemen dönelim.</p>
+      <div class="contact-actions">
+        <button class="btn-secondary" data-whatsapp="genel">Bilgi Almak İstiyorum</button>
+        <button class="btn-secondary" data-whatsapp="psychologist">Psikolog Talebi</button>
+      </div>
+      <div class="template-box">
+        <p class="muted">Hızlı Mesajlar</p>
+        <button class="template" data-template="client">Merhaba, danışanım. ... konusunda psikolog desteği almak istiyorum.</button>
+        <button class="template" data-template="parent">Merhaba, yakınım için bilgi almak istiyorum.</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const APP_VERSION = window.APP_VERSION || "1.4.0";
+    const WHATSAPP_NUMBER = "905426726750";
+    const anonId = localStorage.getItem("anonId") || (() => {
+      const rand = (crypto && crypto.randomUUID) ? crypto.randomUUID().slice(0,8) : Math.random().toString(36).slice(2,10);
+      localStorage.setItem("anonId", rand);
+      return rand;
+    })();
+    const quotes = [
+      { text: "İyileşme, küçük ve kararlı adımlarla başlar.", author: "Zihin Atölyesi" },
+      { text: "Kendini duymaya başladığında değişim başlar.", author: "Psikolog Notu" },
+      { text: "Güvende hissetmek, gelişimin ilk adımıdır.", author: "Terapi İlkesi" },
+      { text: "En değerli yatırım, kendine yaptığın yatırımdır.", author: "İyi Oluş Vizyonu" }
+    ];
+
+    const carousel = document.getElementById('quoteCarousel');
+    const quoteText = document.getElementById('quoteText');
+    const quoteAuthor = document.getElementById('quoteAuthor');
+    const dotsWrap = document.getElementById('quoteDots');
+    let qIndex = 0;
+
+    function renderQuote(idx){
+      const q = quotes[idx];
+      quoteText.textContent = `“${q.text}”`;
+      quoteAuthor.textContent = q.author;
+      dotsWrap.innerHTML = quotes.map((_,i)=>`<span class="dot ${i===idx?'on':''}" data-dot="${i}"></span>`).join('');
+      document.querySelectorAll('[data-dot]').forEach(d=>d.addEventListener('click',()=>{qIndex=parseInt(d.dataset.dot);renderQuote(qIndex);}));
+    }
+    setInterval(()=>{ qIndex = (qIndex + 1) % quotes.length; renderQuote(qIndex); }, 4800);
+    renderQuote(0);
+
+    // slider dots
+    const slides = Array.from(document.querySelectorAll('#psychologistSlider .slide-card'));
+    const dots = document.getElementById('sliderDots');
+    dots.innerHTML = slides.map((_,i)=>`<span class="dot ${i===0?'on':''}" data-slide="${i}"></span>`).join('');
+    dots.querySelectorAll('[data-slide]').forEach(dot=>{
+      dot.addEventListener('click',()=>{
+        dots.querySelectorAll('.dot').forEach(d=>d.classList.remove('on'));
+        dot.classList.add('on');
+        slides[parseInt(dot.dataset.slide)].scrollIntoView({behavior:'smooth', inline:'center', block:'nearest'});
+      });
+    });
+
+    // FAQ accordion
+    document.querySelectorAll('.acc-head').forEach(btn=>{
+      btn.addEventListener('click',()=>{
+        btn.classList.toggle('open');
+        const body = btn.nextElementSibling;
+        body.style.maxHeight = body.style.maxHeight ? null : body.scrollHeight + 'px';
+      });
+    });
+    const navToggle = document.getElementById('navToggle');
+    document.querySelectorAll('.nav-links a').forEach(link=>{
+      link.addEventListener('click',()=>{ if(navToggle) navToggle.checked = false; });
+    });
+    // WhatsApp panel
+    const panel = document.getElementById('contactPanel');
+    const toggle = document.getElementById('contactToggle');
+    const closeBtn = document.getElementById('contactClose');
+    toggle.addEventListener('click',()=>panel.classList.toggle('hidden'));
+    closeBtn.addEventListener('click',()=>panel.classList.add('hidden'));
+
+    function openWhatsApp(preset){
+      const base = `https://wa.me/${WHATSAPP_NUMBER}`;
+      const full = `${preset}\n\n(Zihin Atölyesi üzerinden gönderildi)`;
+      const url = `${base}?text=${encodeURIComponent(full)}`;
+      window.open(url, "_blank");
+      panel?.classList.add('hidden');
+    }
+
+    document.querySelectorAll('[data-whatsapp]').forEach(btn=>{
+      btn.addEventListener('click',()=>{
+        const type = btn.dataset.whatsapp;
+      const msg = type === 'psychologist'
+        ? 'Merhaba, psikolog desteği ve uzmanlar hakkında bilgi almak istiyorum.'
+        : 'Merhaba, genel işleyiş hakkında sorum var.';
+        openWhatsApp(msg);
+      });
+    });
+    document.querySelectorAll('.template').forEach(btn=>{
+      btn.addEventListener('click',()=>openWhatsApp(btn.textContent.trim()));
+    });
+
+    document.getElementById('btnLogin').addEventListener('click', () => {
+      localStorage.removeItem("roleChoice"); 
+      window.location.href = "psy-panel.html";
+    });
+     // cache busting badge
+    document.getElementById("styleLink").href = `psy-style.css?v=${APP_VERSION}`;
+    document.querySelectorAll(".version-chip").forEach(el => el.textContent = `Sürüm v${APP_VERSION}`);
+  </script>
+</body>
+</html>
